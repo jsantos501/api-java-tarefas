@@ -1,7 +1,6 @@
 package br.com.ajs.tarefas.model;
 
 import java.math.BigDecimal;
-import java.util.Calendar;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -30,6 +29,9 @@ public class Tarefas {
 	
 	@Column
 	private Integer ordemApresentacao;
+	
+	@Column
+	private Boolean flag;
 	
 	
 	public Long getId() {
@@ -61,6 +63,12 @@ public class Tarefas {
 	}
 	public void setOrdemApresentacao(Integer ordemApresentacao) {
 		this.ordemApresentacao = ordemApresentacao;
+	}
+	public Boolean getFlag() {
+		return flag;
+	}
+	public void setFlag(Boolean flag) {
+		this.flag = flag;
 	}
 	
 	
